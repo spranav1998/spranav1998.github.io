@@ -84,7 +84,7 @@
           <a href="#education" class="nav-link text-sm text-text-secondary hover:text-text-primary transition-colors">Education</a>
           <a href="#blog" class="nav-link text-sm text-text-secondary hover:text-text-primary transition-colors">Blog</a>
           <a href="#contact" class="nav-link text-sm text-text-secondary hover:text-text-primary transition-colors">Contact</a>
-          <a href="assets/files/Pranav_Sankar_Resume.pdf" target="_blank" class="ml-2 px-4 py-1.5 text-sm font-medium rounded-full border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300">
+          <a href="assets/files/Pranav_Sankar_Resume.pdf" target="_blank" download="Pranav_Sankar_Resume.pdf" class="ml-2 px-4 py-1.5 text-sm font-medium rounded-full border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300">
             Resume
           </a>
         </div>
@@ -106,7 +106,7 @@
         <a href="#education" class="mobile-nav-link block text-sm text-text-secondary hover:text-text-primary transition-colors py-2">Education</a>
         <a href="#blog" class="mobile-nav-link block text-sm text-text-secondary hover:text-text-primary transition-colors py-2">Blog</a>
         <a href="#contact" class="mobile-nav-link block text-sm text-text-secondary hover:text-text-primary transition-colors py-2">Contact</a>
-        <a href="assets/files/Pranav_Sankar_Resume.pdf" target="_blank" class="inline-block mt-2 px-4 py-1.5 text-sm font-medium rounded-full border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300">
+        <a href="assets/files/Pranav_Sankar_Resume.pdf" target="_blank" download="Pranav_Sankar_Resume.pdf" class="inline-block mt-2 px-4 py-1.5 text-sm font-medium rounded-full border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300">
           Resume
         </a>
       </div>
@@ -298,143 +298,349 @@
   <!-- ═══════════════════════════════════════════ -->
   <section id="projects" class="py-20 lg:py-28">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="section-heading fade-in">Projects</h2>
+      <h2 class="section-heading fade-in">Selected Products</h2>
+      <p class="project-intro fade-in">
+        Products I built, led, or shipped across client delivery and internal product development, with ownership called out explicitly so the scope of my work is clear.
+      </p>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <div class="grid lg:grid-cols-2 gap-6 mt-12">
 
         <!-- CloudNotes.ai -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/cloudnotes.png" alt="CloudNotes.ai screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">CloudNotes.ai</h3>
-            <p class="text-sm text-text-secondary mb-4">AI meeting intelligence - converts audio into structured reports using LLM pipelines</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">LLM</span>
-              <span class="skill-pill-sm">RAG</span>
-              <span class="skill-pill-sm">AWS</span>
-              <span class="skill-pill-sm">FastAPI</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Project</span>
+              <span class="project-badge project-badge-role">Role: AWS Delivery Lead</span>
             </div>
-            <a href="https://cloudnotes.ai" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">CloudNotes.ai</h3>
+            <p class="project-copy">
+              AI-assisted note taking product for professionals that turns recorded sessions into structured outputs. I focused on production reliability, autoscaling, and delivery so the platform could grow with real usage.
+            </p>
+            <ul class="project-highlights">
+              <li>Implemented ECS and Fargate autoscaling for usage-driven backend demand.</li>
+              <li>Delivered S3 and CloudFront frontend hosting plus GitHub Actions CI/CD for repeatable releases.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">AWS</span>
+              <span class="skill-pill-sm">ECS</span>
+              <span class="skill-pill-sm">Fargate</span>
+              <span class="skill-pill-sm">CloudFront</span>
+              <span class="skill-pill-sm">CI/CD</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://cloudnotes.ai" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
         <!-- Candidate Hub -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/candidatehub.png" alt="Candidate Hub screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Candidate Hub</h3>
-            <p class="text-sm text-text-secondary mb-4">Semantic resume-JD matching with embeddings and AI-based scoring</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">Embeddings</span>
-              <span class="skill-pill-sm">NLP</span>
-              <span class="skill-pill-sm">Vector DB</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-internal">Internal Product</span>
+              <span class="project-badge project-badge-role">Role: Lead Developer</span>
             </div>
-            <a href="https://candidate.codersarts.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Candidate Hub</h3>
+            <p class="project-copy">
+              AI-driven resume and JD matching product built for Codersarts. The core idea is semantic reasoning over engineering depth and skill fit, rather than shallow keyword overlap.
+            </p>
+            <ul class="project-highlights">
+              <li>Ranks candidates with contextual AI match signals and skill-gap reasoning.</li>
+              <li>Supports bulk parsing, shortlist review, and agency-style candidate workflows.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">Embeddings</span>
+              <span class="skill-pill-sm">Semantic Matching</span>
+              <span class="skill-pill-sm">NLP</span>
+              <span class="skill-pill-sm">Recruiting Tech</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://candidate.codersarts.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
         <!-- Agents -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/agents.png" alt="Agents CaaS screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Agents (CaaS)</h3>
-            <p class="text-sm text-text-secondary mb-4">Chatbot-as-a-Service platform with agentic workflows for business automation</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">LangChain</span>
-              <span class="skill-pill-sm">Agents</span>
-              <span class="skill-pill-sm">Chatbot</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-internal">Internal Product</span>
+              <span class="project-badge project-badge-role">Role: Platform Developer</span>
             </div>
-            <a href="https://agents.codersarts.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Agents (CaaS)</h3>
+            <p class="project-copy">
+              Chatbot-as-a-Service platform for packaging agentic workflows into reusable business automation products. Built to turn multiple agent patterns into client-ready demos and production paths.
+            </p>
+            <ul class="project-highlights">
+              <li>Supports multiple agent types, demos, and business use cases from support to operations.</li>
+              <li>Designed as a reusable platform rather than a one-off chatbot implementation.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">Agents</span>
+              <span class="skill-pill-sm">LangChain</span>
+              <span class="skill-pill-sm">Automation</span>
+              <span class="skill-pill-sm">Platform</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://agents.codersarts.dev" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
         <!-- Compelion -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/compelion.png" alt="Compelion screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Compelion</h3>
-            <p class="text-sm text-text-secondary mb-4">Enterprise innovation platform - built backend and AI workflows</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">Django</span>
-              <span class="skill-pill-sm">LLM</span>
-              <span class="skill-pill-sm">Enterprise</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Project</span>
+              <span class="project-badge project-badge-role">Role: Lead Backend Engineer</span>
             </div>
-            <a href="https://compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Compelion</h3>
+            <p class="project-copy">
+              AI-powered innovation management platform for turning raw ideas into validated plans, execution workflows, and strategic decisions. I developed and maintain the backend systems powering the product.
+            </p>
+            <ul class="project-highlights">
+              <li>Built and maintain Django DRF APIs with AWS-backed production infrastructure.</li>
+              <li>Established the platform foundation that later expanded into a broader client suite.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">Django DRF</span>
+              <span class="skill-pill-sm">AWS</span>
+              <span class="skill-pill-sm">Enterprise SaaS</span>
+              <span class="skill-pill-sm">LLM Workflows</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
         <!-- Nova -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/nova.png" alt="Nova screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Nova</h3>
-            <p class="text-sm text-text-secondary mb-4">AI-powered component of the Compelion ecosystem</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">AI</span>
-              <span class="skill-pill-sm">Cloud</span>
-              <span class="skill-pill-sm">Microservices</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Project</span>
+              <span class="project-badge project-badge-role">Role: Sole Developer</span>
             </div>
-            <a href="https://nova.compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Nova</h3>
+            <p class="project-copy">
+              AI-powered email automation product built with LLMs and RAG to manage communications with context-aware replies. I built the full system end-to-end and continue to maintain it in production.
+            </p>
+            <ul class="project-highlights">
+              <li>Developed backend with Django and Flask plus frontend in React.js.</li>
+              <li>Owned AWS deployment, production maintenance, and product evolution after launch.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">LLM</span>
+              <span class="skill-pill-sm">RAG</span>
+              <span class="skill-pill-sm">React.js</span>
+              <span class="skill-pill-sm">AWS</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://nova.compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Spark -->
-        <div class="project-card fade-in">
+        <!-- DocProcessing360 -->
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
-            <img src="assets/img/projects/spark.png" alt="Spark screenshot" class="w-full h-full object-cover object-top" loading="lazy">
+            <div class="project-img-placeholder">
+              <div class="project-placeholder-copy">
+                <i data-lucide="file-search" class="w-12 h-12 text-accent/50"></i>
+                <span>Private Deployment</span>
+              </div>
+            </div>
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Spark</h3>
-            <p class="text-sm text-text-secondary mb-4">Part of Compelion suite - AI-driven insights</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">AI</span>
-              <span class="skill-pill-sm">Analytics</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-internal">Internal Product</span>
+              <span class="project-badge project-badge-role">Role: Production Rollout</span>
+              <span class="project-badge project-badge-status">Status: Just Deployed</span>
             </div>
-            <a href="https://spark.compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">DocProcessing360</h3>
+            <p class="project-copy">
+              Intelligent document processing system for extracting structured data from messy PDFs and images with vision-language models. I contributed on the deployment side to help move the product into production.
+            </p>
+            <ul class="project-highlights">
+              <li>Focused on production rollout readiness and deployment support.</li>
+              <li>Targets structured extraction from noisy, real-world documents rather than clean templates.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">Vision LLMs</span>
+              <span class="skill-pill-sm">Document AI</span>
+              <span class="skill-pill-sm">Structured Extraction</span>
+            </div>
+            <div class="project-link-row">
+              <span class="project-link-muted">Production deployment only</span>
+            </div>
           </div>
-        </div>
+        </article>
 
         <!-- Quizentia -->
-        <div class="project-card fade-in">
+        <article class="project-card fade-in">
           <div class="project-img-wrapper">
             <img src="assets/img/projects/quizentia.png" alt="Quizentia screenshot" class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-text-primary mb-2">Quizentia</h3>
-            <p class="text-sm text-text-secondary mb-4">AI quiz generation platform - product owner and deployment lead</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="skill-pill-sm">AI</span>
-              <span class="skill-pill-sm">Product</span>
-              <span class="skill-pill-sm">AWS</span>
+            <div class="project-meta">
+              <span class="project-badge project-badge-internal">Internal Product</span>
+              <span class="project-badge project-badge-role">Role: Product Lead and Deployer</span>
             </div>
-            <a href="https://quizentia.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
-              Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Quizentia</h3>
+            <p class="project-copy">
+              AI quiz generation platform that turns notes, PDFs, YouTube links, and images into ready-to-use assessments. I acted as product head between leadership and engineering, then handled deployment.
+            </p>
+            <ul class="project-highlights">
+              <li>Translated CEO goals into execution-ready product direction for the build.</li>
+              <li>Owned release and production deployment once the product was ready to ship.</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="skill-pill-sm">AI Education</span>
+              <span class="skill-pill-sm">Product Delivery</span>
+              <span class="skill-pill-sm">AWS</span>
+              <span class="skill-pill-sm">Deployment</span>
+            </div>
+            <div class="project-link-row">
+              <a href="https://quizentia.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- COMPELION SUITE SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="compelion-suite" class="py-20 lg:py-28 bg-secondary/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-heading fade-in">Compelion Suite</h2>
+      <p class="project-intro fade-in">
+        A client ecosystem that demonstrates I can grow one engagement into a connected family of products, not just ship isolated apps.
+      </p>
+
+      <div class="suite-shell mt-12">
+        <div class="suite-summary fade-in">
+          <div class="project-meta">
+            <span class="project-badge project-badge-client">Client Ecosystem</span>
+            <span class="project-badge project-badge-role">Multi-Product Delivery</span>
+          </div>
+          <h3>Proof I can build suites, not just standalone tools</h3>
+          <p>
+            Compelion is the clearest example of suite-level delivery in my work. The core platform handles innovation workflows, Nova extends the ecosystem into AI communications automation, and Spark pushes the suite into content and growth automation.
+          </p>
+          <p>
+            Across the engagement I led backend delivery on the flagship platform, built Nova end-to-end, and helped shape a client-ready product family with room for adjacent products and shared technical foundations.
+          </p>
         </div>
 
+        <div class="suite-points fade-in">
+          <div class="suite-point">
+            <span class="suite-point-label">Platform Foundation</span>
+            <p>Compelion anchors the suite with innovation capture, validation, analytics, and execution workflows on Django DRF and AWS.</p>
+          </div>
+          <div class="suite-point">
+            <span class="suite-point-label">Communications Automation</span>
+            <p>Nova expands the client ecosystem into AI-powered email and call handling with LLM and RAG-driven workflows.</p>
+          </div>
+          <div class="suite-point">
+            <span class="suite-point-label">Growth Automation</span>
+            <p>Spark shows the suite can branch into adjacent workflow products for AI content generation, scheduling, analytics, and automation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <article class="project-card fade-in">
+          <div class="project-img-wrapper">
+            <img src="assets/img/projects/compelion.png" alt="Compelion suite platform screenshot" class="w-full h-full object-cover object-top" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Suite</span>
+              <span class="project-badge project-badge-role">Role: Lead Backend Engineer</span>
+            </div>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Compelion Core Platform</h3>
+            <p class="project-copy">
+              Innovation management product for idea intake, analysis, planning, and execution. My work centered on the backend systems and AWS delivery layer that support the platform.
+            </p>
+            <div class="project-link-row">
+              <a href="https://compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                View Platform <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-img-wrapper">
+            <img src="assets/img/projects/nova.png" alt="Nova suite product screenshot" class="w-full h-full object-cover object-top" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Suite</span>
+              <span class="project-badge project-badge-role">Role: Sole Developer</span>
+            </div>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Nova Communications Layer</h3>
+            <p class="project-copy">
+              End-to-end AI communications product that adds context-aware email and call automation to the broader suite, with LLM, RAG, React.js, Django, Flask, and AWS.
+            </p>
+            <div class="project-link-row">
+              <a href="https://nova.compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                View Product <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-img-wrapper">
+            <img src="assets/img/projects/spark.png" alt="Spark suite product screenshot" class="w-full h-full object-cover object-top" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="project-meta">
+              <span class="project-badge project-badge-client">Client Suite</span>
+              <span class="project-badge project-badge-status">Growth Automation Module</span>
+            </div>
+            <h3 class="text-lg font-semibold text-text-primary mb-3">Spark Growth Layer</h3>
+            <p class="project-copy">
+              AI-powered LinkedIn growth product that shows how the client ecosystem can expand into adjacent workflow automation, analytics, publishing, and audience growth tools.
+            </p>
+            <div class="project-link-row">
+              <a href="https://spark.compelion.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-sm text-accent-light hover:text-accent transition-colors">
+                View Product <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -673,7 +879,10 @@
           <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
             <input type="hidden" name="access_key" value="97dce2bd-d762-4834-96d1-73e9e84181ea">
             <input type="hidden" name="subject" value="New Contact from Portfolio">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="botcheck-field" aria-hidden="true">
+              <label for="botcheck">Leave this field empty</label>
+              <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1">
+            </div>
             <div class="grid sm:grid-cols-2 gap-5">
               <div>
                 <label for="name" class="block text-sm text-text-secondary mb-1.5">Name</label>
@@ -722,13 +931,13 @@
           <div class="space-y-4">
             <a href="https://github.com/spranav1998" target="_blank" rel="noopener" class="flex items-center gap-3 text-text-secondary hover:text-accent-light transition-colors group">
               <div class="w-10 h-10 rounded-lg bg-secondary border border-white/5 flex items-center justify-center group-hover:border-accent/30 transition-colors">
-                <i data-lucide="github" class="w-5 h-5"></i>
+                <i data-lucide="code-xml" class="w-5 h-5"></i>
               </div>
               github.com/spranav1998
             </a>
             <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="flex items-center gap-3 text-text-secondary hover:text-accent-light transition-colors group">
               <div class="w-10 h-10 rounded-lg bg-secondary border border-white/5 flex items-center justify-center group-hover:border-accent/30 transition-colors">
-                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                <i data-lucide="briefcase-business" class="w-5 h-5"></i>
               </div>
               LinkedIn Profile
             </a>
@@ -758,13 +967,13 @@
           Built with <span class="text-accent-light">&#9749;</span> and Python by Pranav Sankar
         </p>
         <div class="flex items-center gap-4">
-          <a href="https://github.com/spranav1998" target="_blank" rel="noopener" class="text-text-secondary hover:text-accent-light transition-colors">
-            <i data-lucide="github" class="w-5 h-5"></i>
+          <a href="https://github.com/spranav1998" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" class="text-text-secondary hover:text-accent-light transition-colors">
+            <i data-lucide="code-xml" class="w-5 h-5"></i>
           </a>
-          <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="text-text-secondary hover:text-accent-light transition-colors">
-            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn" class="text-text-secondary hover:text-accent-light transition-colors">
+            <i data-lucide="briefcase-business" class="w-5 h-5"></i>
           </a>
-          <a href="mailto:" class="text-text-secondary hover:text-accent-light transition-colors">
+          <a href="mailto:s.pranav1998@gmail.com" title="Email" aria-label="Email" class="text-text-secondary hover:text-accent-light transition-colors">
             <i data-lucide="mail" class="w-5 h-5"></i>
           </a>
         </div>
