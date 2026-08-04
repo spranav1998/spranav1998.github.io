@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
 
   // ── Typed.js ──
-  new Typed('#typed-output', {
+  const typedOutput = document.getElementById('typed-output');
+  if (typedOutput && typeof Typed !== 'undefined') {
+    new Typed('#typed-output', {
     strings: [
       'AI/ML Engineer',
       'LLM &amp; RAG Systems Builder',
@@ -18,8 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     backSpeed: 30,
     backDelay: 2000,
     loop: true,
-    smartBackspace: true,
-  });
+      smartBackspace: true,
+    });
+  }
 
   // ── Navbar Scroll ──
   const navbar = document.getElementById('navbar');

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Learning &amp; MLOps | Pranav Sankar</title>
+  <meta name="description" content="Machine Learning and MLOps portfolio of Pranav Sankar: forecasting, statistical process control, NLP, deep learning, evaluation, and AWS deployment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#0a0a0f', secondary: '#111827', accent: '#3b82f6', 'accent-light': '#60a5fa', 'accent-purple': '#8b5cf6', 'text-primary': '#f1f5f9', 'text-secondary': '#94a3b8' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] } } } }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/focus-pages.css">
+</head>
+<body class="bg-primary text-text-primary font-sans antialiased">
+  <nav class="focus-nav fixed inset-x-0 top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
+      <a href="index.html" class="font-mono text-xl font-semibold text-accent-light">PS<span class="text-accent-purple">.</span></a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="text-text-secondary hover:text-white">Home</a>
+        <a href="genai-agentic.html" class="text-text-secondary hover:text-white">GenAI &amp; Agents</a>
+        <a href="assets/files/Pranav_Sankar_ML_AI_Engineer_Resume.pdf" target="_blank" download class="focus-primary"><i data-lucide="download" class="w-4 h-4"></i> ML Resume</a>
+      </div>
+      <button id="focus-menu-button" class="md:hidden text-text-secondary" aria-label="Toggle navigation" aria-expanded="false"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+    <div id="focus-mobile-menu" class="hidden md:hidden border-t border-white/5 bg-secondary px-4 py-4 space-y-3">
+      <a href="index.html" class="block text-sm text-text-secondary">Home</a>
+      <a href="genai-agentic.html" class="block text-sm text-text-secondary">GenAI &amp; Agents</a>
+      <a href="assets/files/Pranav_Sankar_ML_AI_Engineer_Resume.pdf" target="_blank" download class="block text-sm text-accent-light">Download ML Resume</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="focus-hero">
+      <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="focus-hero-copy fade-in">
+          <h1>Machine Learning built for real operating conditions.</h1>
+          <p class="focus-hero-lead">I build statistical, NLP and deep-learning systems from experimentation through deployment. My four years of experience span forecasting, process intelligence, model evaluation, experiment tracking, AWS operations and cost-aware production decisions.</p>
+          <div class="focus-hero-actions">
+            <a href="#selected-work" class="focus-primary">View selected systems <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
+            <a href="assets/files/Pranav_Sankar_ML_AI_Engineer_Resume.pdf" target="_blank" download class="focus-secondary"><i data-lucide="download" class="w-4 h-4"></i> Download ML resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="proof-strip fade-in">
+          <div class="proof-item"><strong>4 years in applied AI</strong><span>Production delivery across ML, deep learning, NLP and generative AI.</span></div>
+          <div class="proof-item"><strong>Statistical + neural approaches</strong><span>SARIMAX and SPC through CNN-LSTM, Swin-UNet, BERT and speech synthesis.</span></div>
+          <div class="proof-item"><strong>Measured production decisions</strong><span>Evaluation, latency, cost, monitoring and operational constraints shape model selection.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="selected-work" class="focus-section">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="focus-section-heading fade-in">Selected machine learning systems</h2>
+        <p class="focus-section-lead fade-in">The common thread is not a single model family. It is choosing the right method, integrating it into a product, and making its behavior observable.</p>
+        <div class="case-list">
+          <article class="case-row fade-in"><span class="case-index">01</span><div><h3>Project forecasting and uncertainty intelligence</h3><p>Built per-project benefit forecasts with SARIMA/SARIMAX, cost and timeline estimation with PERT and 1,000-run Monte Carlo simulation, plus auto-ARIMA forecasting and six-rule statistical process control. Integrated the workloads into Django and ran them as background jobs with Django Q2 on AWS.</p></div><div class="case-tags"><span>SARIMAX</span><span>ARIMA</span><span>PERT</span><span>Monte Carlo</span><span>SPC</span><span>Django Q2</span></div></article>
+          <article class="case-row fade-in"><span class="case-index">02</span><div><h3>Enterprise sentiment and operational analytics</h3><p>Developed a production NLP pipeline for sentiment scoring, monthly aggregation and project- and role-level analysis, exposed through Django REST APIs. Combined language signals with SPC outputs so teams could identify shifts, concerns and trends instead of viewing isolated scores.</p></div><div class="case-tags"><span>NLP</span><span>TextBlob</span><span>Pandas</span><span>SPC</span><span>DRF</span></div></article>
+          <article class="case-row fade-in"><span class="case-index">03</span><div><h3>Medical deep-learning research assistance</h3><p>Supported client research by training a CNN-LSTM model for ECG disease classification and fine-tuning a Swin-UNet model for X-ray image classification on client-provided datasets, covering data preparation, training and performance analysis.</p></div><div class="case-tags"><span>CNN-LSTM</span><span>Swin-UNet</span><span>PyTorch</span><span>Medical AI</span></div></article>
+          <article class="case-row fade-in"><span class="case-index">04</span><div><h3>Model evaluation and classical NLP alternatives</h3><p>Built a 60-email evaluation harness covering routing, classification, sentiment, multilingual behavior, safety, RAG, latency and cost. Compared newer nano models with the production baseline and retained GPT-4o-mini when evidence showed the alternatives were not yet cost-performance wins. Separately fine-tuned BERT for email classification and sentiment as a non-LLM proof of concept.</p></div><div class="case-tags"><span>Evaluation</span><span>BERT</span><span>W&amp;B</span><span>Latency</span><span>Cost</span></div></article>
+          <article class="case-row fade-in"><span class="case-index">05</span><div><h3>Fine-tuned text-to-speech automation</h3><p>Fine-tuned Qwen 3.5 TTS on an internal executive voice and deployed it behind a RunPod serverless endpoint for company audio generation. The optimized workflow reduced generation time from roughly 12 minutes to under 3 minutes.</p></div><div class="case-tags"><span>Qwen TTS</span><span>Fine-tuning</span><span>RunPod</span><span>FastAPI</span></div></article>
+          <article class="case-row fade-in"><span class="case-index">06</span><div><h3>Cloud deployment and MLOps</h3><p>Used Weights &amp; Biases for experiment tracking, artifacts and model versions; CloudWatch for production monitoring; and EC2 autoscaling to scale a cost-constrained monolithic backend. Shipped containerized services with Docker, ECS/Fargate and CI/CD pipelines.</p></div><div class="case-tags"><span>W&amp;B</span><span>CloudWatch</span><span>AWS</span><span>Docker</span><span>CI/CD</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus-section bg-secondary/25">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="focus-section-heading fade-in">How I take models to production</h2>
+        <div class="practice-grid">
+          <div class="practice-item fade-in"><h3>Start with the operating constraint</h3><p>Accuracy matters alongside compute budget, data volume, latency, integration boundaries and the cost of maintaining a separate service.</p></div>
+          <div class="practice-item fade-in"><h3>Evaluate before replacing</h3><p>I use representative test sets and track task quality, safety, cost and latency before changing models or architecture.</p></div>
+          <div class="practice-item fade-in"><h3>Instrument the full pipeline</h3><p>Experiment artifacts, application logs, background-task behavior and infrastructure metrics make the system diagnosable after launch.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus-section">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="focus-cta fade-in">
+          <h2>Hiring for an ML or Senior AI role?</h2>
+          <p>The ML-focused resume gives the concise, recruiter-ready version of this experience. For orchestration, RAG and production agents, continue to the GenAI track.</p>
+          <div class="focus-hero-actions"><a href="assets/files/Pranav_Sankar_ML_AI_Engineer_Resume.pdf" target="_blank" download class="focus-primary"><i data-lucide="download" class="w-4 h-4"></i> Download ML resume</a><a href="genai-agentic.html" class="focus-secondary">Explore GenAI &amp; Agents <i data-lucide="arrow-right" class="w-4 h-4"></i></a><a href="mailto:s.pranav1998@gmail.com" class="focus-secondary">Contact me</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 py-8"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row gap-3 justify-between text-sm text-text-secondary"><span>&copy; 2026 Pranav Sankar</span><span>Chennai, India · <a class="hover:text-accent-light" href="mailto:s.pranav1998@gmail.com">s.pranav1998@gmail.com</a></span></div></footer>
+  <script src="assets/js/focus-pages.js"></script>
+</body>
+</html>

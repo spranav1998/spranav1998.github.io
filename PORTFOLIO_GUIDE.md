@@ -111,7 +111,7 @@ Hi, I'm Pranav Sankar
 **Layout:** Two columns — text left, stats/highlights right
 
 **Left column (narrative):**
-> AI/ML Engineer with 3.5+ years of experience building end-to-end AI systems — from LLM pipelines and RAG architectures to scalable cloud deployments. I've taken multiple AI products from 0→1, owned full-stack delivery, and served as the technical bridge between business needs and production systems.
+> Machine Learning and AI Engineer with 4 years of experience building production systems across forecasting, statistical monitoring, NLP, deep learning, model evaluation, GenAI, and agentic workflows. I've taken multiple AI products from 0→1, owned full-stack delivery, and served as the technical bridge between business needs and production systems.
 >
 > Currently at Codersarts, I design AI-powered platforms, mentor engineering teams, and work directly with 20+ clients to turn ideas into deployed products.
 >
@@ -120,7 +120,7 @@ Hi, I'm Pranav Sankar
 **Right column (stat cards — 2×2 grid):**
 | Metric | Value |
 |--------|-------|
-| Years Experience | 3.5+ |
+| Years Experience | 4 |
 | AI Products Shipped | 7+ |
 | Clients Served | 20+ |
 | pSEO Pages Generated | 1000+ |
@@ -324,7 +324,7 @@ Each card:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pranav Sankar — AI/ML Engineer | Portfolio</title>
-  <meta name="description" content="AI/ML Engineer with 3.5+ years building LLM systems, RAG pipelines, and cloud-native AI products. View my work and get in touch.">
+  <meta name="description" content="Machine Learning and AI Engineer with 4 years building production ML, NLP, deep learning, GenAI, and cloud-native AI products. View my work and get in touch.">
   <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, Python, AWS, Portfolio">
   <meta name="author" content="Pranav Sankar">
 
